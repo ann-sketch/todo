@@ -1,0 +1,238 @@
+body{
+    background-color: rgba(57, 57, 156, 0.863);
+}
+
+h1{
+    font-weight: 100;
+    font-size: 3rem;
+    font-family: unset;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: unset;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.todo-container{
+    margin-left: 25rem;
+    margin-top: 5rem;
+    display: flex;
+}
+
+#todo-input{
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid blue;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    width: 50%;
+    outline: none;
+}
+
+#todo-input::placeholder{
+    color: blue;
+    font-family: inherit;
+}
+
+.add-todo{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline: none;
+}
+
+.add-todo:hover{
+    background: rgb(6, 6, 46);
+}
+
+.todo{
+    color: #000;
+    padding: 0.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;  
+    display: flex;
+    background-color: #fff;
+    margin: 0.5rem;
+    margin-left: 18rem;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.todo-item{
+    color: #000;
+    display: flex;
+    padding: 0.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.completed-btn{
+    outline: none;
+    background: green;
+    color: #fff;
+    border: none;
+    padding: 0.4rem;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5rem;
+}
+
+.completed-btn:hover{
+    background: rgb(7, 54, 7);
+}
+
+.delete-btn{
+    outline: none;
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 0.4rem;
+    
+}
+
+.delete-btn:hover{
+    background: rgb(104, 12, 12);
+}
+
+/*media queries*/
+@media screen and (min-width: 600px){
+    .todo-container{
+        display: flex;
+        margin-left: 20rem;
+        margin-top: 5rem;
+    }
+
+    .todo{
+        color: #000;
+        padding: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;  
+        display: flex;
+        background-color: #fff;
+        margin: 0.5rem;
+        margin-left: 18rem;
+        width: 50%;
+        justify-content: space-between;
+    }
+    
+    .todo-item{
+        color: #000;
+        display: flex;
+        padding: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+
+    .completed-btn{
+        outline: none;
+        padding: 0.4rem;
+    }
+
+    .delete-btn{
+        outline: none;
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .todo-container{
+        display: flex;
+        margin-top: 5rem;
+        margin-left: 20rem;
+    }
+
+    .todo{
+        color: #000;
+        padding: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;  
+        display: flex;
+        background-color: #fff;
+        margin: 0.5rem;
+        margin-left: 18rem;
+        width: 50%;
+        justify-content: space-between;
+    }
+    
+    .todo-item{
+        color: #000;
+        display: flex;
+        padding: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+
+    .completed-btn{
+        outline: none;
+        padding: 0.4rem;
+    }
+
+    .delete-btn{
+        outline: none;
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .todo-container{
+        display: flex;
+        margin-top: 5rem;
+        margin-left: 20rem;
+    }
+
+    .todo{
+        color: #000;
+        padding: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;  
+        display: flex;
+        background-color: #fff;
+        margin: 0.5rem;
+        margin-left: 18rem;
+        width: 50%;
+        justify-content: space-between;
+    }
+    
+    .todo-item{
+        color: #000;
+        display: flex;
+        padding: 0.3rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+
+    .todo li{
+        flex: 1;
+    }
+
+    .completed-btn{
+        outline: none;
+        padding: 0.4rem;
+    }
+
+    .completed{
+        text-decoration: line-through;
+    }
+
+    .delete-btn{
+        outline: none;
+        padding: 0.4rem;
+    }
+
+}
