@@ -8,7 +8,7 @@ const completedbutton = document.querySelector('.todo-list');
 // Event listeners
 todobutton.addEventListener('click', addtodoitem);
 deletebutton.addEventListener('click', deletetodo);
-completedbutton.addEventListener('clcik', completetodo);
+completedbutton.addEventListener('click', completetodo);
 
 //functions
 function addtodoitem(){
@@ -47,17 +47,14 @@ function deletetodo(e){
 
 function completetodo(e){
     const item = e.target;
+    const txtIsNormal = true
+    const txtIsLinedThrough = false
+    // item.previousElementSibling gets the element 
+    // <li class="todo-item">todo 1</li>
+    // .style.textDecoration styles the element to either normal/line-through
     if (item.classList[0] === 'completed-btn') {
-        const todo = item.parentElement;
-        todo.classList.toggle('completed');
+        item.previousElementSibling.style.textDecoration ="line-through"
+        item.previousElementSibling.style.textDecoration ="normal"
     }
 }
-
-
-
-
-
-
-
-
 
