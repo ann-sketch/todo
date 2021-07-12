@@ -9,25 +9,17 @@
 </head>
 <body>
     <div class="container">
-        <h1 onclick= change() id="element">TODO LIST</h1>
+        <h1>TODO LIST</h1>
         <div class="todo-container">
-            <input type="text"
-            id="todo-input" placeholder="Add a todo item">
+            <input type="text" id="todo-input" placeholder="Add a todo item">
             <button type="submit" class="add-todo" id="todo-btn">Add</button>
         </div>
         <h2>Your todo list is shown below: </h2>
-
         <!--todo-list-->
         <div class="todo-list">
             <!--creating list item in js-->
         </div>
     </div>
-    <script>
-        function change(){
-            document.getElementById('element').style.textDecoration ="line-through"
-        }
-    </script>
-
     <script src="app.js"></script>
 </body>
 </html>
